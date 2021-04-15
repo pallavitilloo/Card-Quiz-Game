@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    This code animates the content and brings it from down to its position-->
+
+    <translate
+        android:duration="2500"
+        android:fromXDelta="0%"
+        android:fromYDelta="150%" />
+
+    <alpha
+        android:duration="1500"
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0" />
+
+</set>

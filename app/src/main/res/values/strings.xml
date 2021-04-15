@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Card Quiz Game</string>
+    <string name="home_text">Register or Login</string>
+    <string name="button_register">Register</string>
+    <string name="button_login">Login</string>
+    <string name="register_text">User Registration Form</string>
+    <string name="login_text">Login</string>
+    <string name="first_name">First Name</string>
+    <string name="family_name">Family Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dob">Date of birth (MM/DD/YYYY)</string>
+    <string name="welcome_msg">Welcome to QuizBee!</string>
+    <string name="welcome_desc">The Card Quiz Game</string>
+    <string name="sign_up_message">To create new account, sign up here</string>
+    <string name="created_by">Created by Pallavi Tilloo</string>
+    <string name="title_activity_register">Register</string>
+    <string name="register_success">Congratulations! You have successfully registered!</string>
+    <string name="login_success">Congratulations! You have successfully logged in!</string>
+    <string name="login_fail">Sorry! Invalid credentials!</string>
+    <string name="game_rule_1">1. The game contains 10 questions based on general concepts related to computer science.</string>
+    <string name="game_rule_2">2. Every question has 5 points each.</string>
+    <string name="game_rule_3">3. You can answer each question only once.</string>
+    <string name="game_rule_4">4. Some questions may have multiple correct answers. Such questions will have checkboxes for answers.</string>
+    <string name="game_rule_5">5. Score will be displayed at the end of the game.</string>
+    <string name="game_rule_message">Here you go! Good Luck!</string>
+    <string name="game_rule_title">Game Rules</string>
+    <string name="start_button">START</string>
+</resources>
