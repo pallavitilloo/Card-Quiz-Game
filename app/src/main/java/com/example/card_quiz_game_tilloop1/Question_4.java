@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link GameRulesFragment#newInstance} factory method to
+ * Use the {@link Question_4#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class GameRulesFragment extends Fragment {
+public class Question_4 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class GameRulesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public GameRulesFragment() {
+    public Question_4() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class GameRulesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment GameRulesFragment.
+     * @return A new instance of fragment Question_4.
      */
     // TODO: Rename and change types and number of parameters
-    public static GameRulesFragment newInstance(String param1, String param2) {
-        GameRulesFragment fragment = new GameRulesFragment();
+    public static Question_4 newInstance(String param1, String param2) {
+        Question_4 fragment = new Question_4();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class GameRulesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_game_rules, container, false);
+        return inflater.inflate(R.layout.fragment_question_4, container, false);
     }
 }
