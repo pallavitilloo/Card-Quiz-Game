@@ -10,6 +10,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/************************************************************************************
+ *
+ *  The Splash Screen activity shows the user a Splash screen with an image and text.
+ *  After some time, the user is taken to the main activity screen
+ * @author Pallavi Tilloo
+ *
+ *************************************************************************************/
+
 public class SplashScreen extends AppCompatActivity {
 
     ImageView splash_image;
@@ -22,6 +30,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
+        getSupportActionBar().hide();
 
         //  This code is to animate the splash image
         splash_image = findViewById(R.id.logo_id);
@@ -45,3 +54,5 @@ public class SplashScreen extends AppCompatActivity {
         },TIME_LIMIT);
     }
 }
+
+/*********************************** End of Splash Screen ****************************************/

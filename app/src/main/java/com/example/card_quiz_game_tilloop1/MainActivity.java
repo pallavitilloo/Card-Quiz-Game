@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/************************************************************************************
+ *
+ *  The Main activity gives option to user to either Register or Login.
+ * @author Pallavi Tilloo
+ *
+ *************************************************************************************/
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btnRegister, btnLogin;
@@ -14,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         //Buttons shown on the activity screen will be listened for clicks
         btnRegister = (Button)findViewById(R.id.btnRegister);
@@ -25,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        //To identify who called this method, we need view.getid
+        //To identify who called this method, we need view.getId()
         switch(v.getId()){
 
             case R.id.btnRegister:
@@ -45,3 +53,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
+
+/************************************** End of MainActivity Class *********************************/

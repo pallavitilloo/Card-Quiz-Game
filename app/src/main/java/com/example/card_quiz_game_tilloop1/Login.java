@@ -17,24 +17,37 @@ import java.util.Iterator;
 
 import static android.text.TextUtils.isEmpty;
 
+/************************************************************************************
+ *
+ *  The Login activity takes user's email as their username and their password and
+ *  compares the details from stored details. If valid, it allows the user to login.
+ * @author Pallavi Tilloo
+ *
+ *************************************************************************************/
+
 public class Login extends AppCompatActivity {
 
     ArrayList<TextInputLayout> loginLayout;
     TextInputEditText tbEmail, tbPassword;
     Button btnLogin;
-    String reg_name, reg_fname, reg_email, reg_password;
+    String reg_email, reg_password;
     SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
+
+        //To initialize the layouts for checking validity of fields
         loginLayout = new ArrayList<>();
         loginLayout.add((TextInputLayout)findViewById(R.id.layout1));
         loginLayout.add((TextInputLayout)findViewById(R.id.layout2));
         tbEmail = (TextInputEditText) findViewById(R.id.tbEmail);
         tbPassword = (TextInputEditText)findViewById(R.id.tbPassword);
         btnLogin = (Button)findViewById(R.id.btnLogin);
+
+        //Get the stored Shared Preferences
         pref = getApplicationContext().getSharedPreferences("CARD_QUIZ", 0);
     }
 
@@ -88,14 +101,17 @@ public class Login extends AppCompatActivity {
             //Check if the entered values match the ones with which the user registered
             if(email.equals(reg_email) && password.equals(reg_password)) {
 
-                //Login user if data is valid
-                toast = Toast.makeText(getApplicationContext(), R.string.login_success, Toast.LENGTH_LONG);
+                Intent i = new Intent(this, GameRules.class);
+                startActivity(i);
             }
             else{
                 //The details don't match
-                toast = Toast.makeText( getApplicationContext(),R.string.login_fail, Toast.LENGTH_LONG);
+                Intent i = new Intent(this, MainActivity.class);
+                startActivity(i);
             }
-            toast.show();
+
         }
     }
 }
+
+/***************************************** End of Login Class *************************************/

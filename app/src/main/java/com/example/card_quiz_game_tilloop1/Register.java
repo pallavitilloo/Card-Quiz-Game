@@ -18,7 +18,6 @@ import java.util.Iterator;
 
 import static android.text.TextUtils.isEmpty;
 import static android.util.Patterns.EMAIL_ADDRESS;
-//import com.example.card_quiz_game_tilloop1.User;
 
 /************************************************************************************
  *
@@ -33,12 +32,13 @@ public class Register extends AppCompatActivity {
     TextInputEditText tbFirstName, tbFamilyName, tbEmail, tbPassword, tbDOB;
     SharedPreferences pref;
     SharedPreferences.Editor editor;
-//    User new_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        getSupportActionBar().hide();
 
         //Capture details from the Input fields
         tbFirstName = (TextInputEditText)findViewById(R.id.tbFirstName);
@@ -214,11 +214,10 @@ public class Register extends AppCompatActivity {
             editor.putString("DOB", dob);
             editor.commit();
 
-            Toast toast = Toast.makeText( getApplicationContext(),R.string.register_success, Toast.LENGTH_LONG);
-            toast.show();
-
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }
     }
 }
+
+/************************************ End of Register Class *************************************/

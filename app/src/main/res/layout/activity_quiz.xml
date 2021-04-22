@@ -1,9 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--        Constraint layout inside scrollview - elements are placed with constraints-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/quesLayout1"
+        android:background="@color/orange_500">
+
+<!--        Question 1-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_1"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvQuestion1"/>
+
+<!--        Options for Question 1-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/q1_rgOptions">
+            <RadioButton
+                android:id="@+id/q1_rbOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1_a">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1_rbOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1_b">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1_rbOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1_c">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1_rbOption4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1_d">
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next >"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_gravity="right"
+            android:id="@+id/btnNext1"
+            android:onClick="Next"/>
+    </LinearLayout>
+
+<!--    Question 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/quesLayout2"
+        android:background="@color/orange_500">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_2"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvQuestion2"/>
+
+<!--        Options for Question 2-->
+        <CheckBox
+            android:id="@+id/q2_cbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_2_a"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_2_b"
+            android:id="@+id/q2_cbOption2"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_2_c"
+            android:id="@+id/q2_cbOption3"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_2_d"
+            android:id="@+id/q2_cbOption4"
+            android:gravity="left">
+        </CheckBox>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next >"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_gravity="right"
+            android:id="@+id/btnNext2"
+            android:onClick="Next"/>
+    </LinearLayout>
+
+<!--    Question 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/quesLayout3"
+        android:background="@color/orange_500">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_3"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/tvQuestion3"/>
+
+<!--        Options for Question 3-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q3_rgOptions">
+        <RadioButton
+            android:id="@+id/q3_rbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_3_a">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/q3_rbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_3_b">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/q3_rbOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_3_c">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/q3_rbOption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_3_d">
+        </RadioButton>
+    </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next >"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_gravity="right"
+            android:id="@+id/btnNext3"
+            app:layout_constraintTop_toBottomOf="@id/quesLayout1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:onClick="Next"/>
+    </LinearLayout>
+
+<!--    Question 4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/quesLayout4"
+        android:background="@color/orange_500">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_4"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvQuestion4"/>
+
+<!--        TextBox input for Question 4-->
+        <EditText android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:width="200dp"
+            android:id="@+id/etq4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next >"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_gravity="right"
+            android:id="@+id/btnNext4"
+            android:onClick="Next"/>
+    </LinearLayout>
+
+<!--    Question 5-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/quesLayout5"
+        android:background="@color/orange_500">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_5"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvQuestion5"/>
+
+<!--        Options for Question 5-->
+        <CheckBox
+            android:id="@+id/q5_cbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_5_a"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_5_b"
+            android:id="@+id/q5_cbOption2"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_5_c"
+            android:id="@+id/q5_cbOption3"
+            android:gravity="left">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option_5_d"
+            android:id="@+id/q5_cbOption4">
+        </CheckBox>
+
+    </LinearLayout>
+
+<!--    Submit button that shows after Question 5 -->
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:id="@+id/btnSubmit"
+        app:layout_constraintTop_toBottomOf="@id/quesLayout5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="Submit"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Scroll View to enable scrolling the contents-->
+
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
@@ -7,11 +9,13 @@
     android:background="@color/bgPeach"
     tools:context=".MainActivity">
 
+<!--    Constraint view with gravity as centre to keep it center aligned-->
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_gravity="center_vertical"
     android:layout_height="match_parent">
 
+<!--    This shows the App icon on the Main activity-->
     <ImageView
         android:id="@+id/logo_id"
         android:layout_width="200dp"
@@ -22,6 +26,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/welcome_msg"/>
 
+<!--    TextView for Welcome message -->
     <TextView
         android:id="@+id/welcome_msg"
         android:layout_width="wrap_content"
@@ -35,6 +40,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnLogin" />
 
+<!--    Button to show login-->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="200dp"
@@ -49,6 +55,7 @@
         app:layout_constraintTop_toBottomOf="@id/welcome_msg"
         app:layout_constraintVertical_bias=".2" />
 
+<!--    General information message -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -64,6 +71,7 @@
         android:textColor="@color/fgMaroon"
         android:textAlignment="center"/>
 
+<!--    Registration button -->
     <Button
         android:id="@+id/btnRegister"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -79,8 +87,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin"
         app:layout_constraintVertical_bias=".2" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

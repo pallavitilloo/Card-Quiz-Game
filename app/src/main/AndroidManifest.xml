@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.card_quiz_game_tilloop1">
 
+<!--    All App Activities are defined here-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/quiz_logo_launcher"
@@ -9,13 +10,16 @@
         android:roundIcon="@mipmap/quiz_logo_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Card_quiz_game_tilloop1">
-        <activity android:name=".GameRules"></activity>
+        <activity android:name=".ShowResult"></activity>
+        <activity android:name=".ScoreStats"></activity>
+        <activity android:name=".Quiz" />
+        <activity android:name=".GameRules" />
         <activity android:name=".Login" />
         <activity android:name=".Register" />
+<!--        The launcher activity-->
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

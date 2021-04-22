@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Relative layout for Splash screen components -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
-    android:background="@color/bgPeach">
+    android:background="@color/bgPeach"
+    tools:context=".SplashScreen">
+
+<!--    The image which will come sliding from top-->
 
     <ImageView
         android:id="@+id/logo_id"
@@ -12,6 +19,7 @@
         android:layout_centerInParent="true"
         android:src="@drawable/bee_splash_foreground"/>
 
+<!--    Text displayed below image-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,6 +30,7 @@
         android:textColor="@color/fgMaroon"
         android:id="@+id/welcome_msg"/>
 
+<!--    The welcome message-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,6 +41,7 @@
         android:textSize="15dp"
         android:textColor="@color/fgMaroon"/>
 
+<!--    Developer details-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

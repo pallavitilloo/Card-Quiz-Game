@@ -1,29 +1,82 @@
 <resources>
+    <!--    General string values for App-->
     <string name="app_name">Card Quiz Game</string>
+    <string name="welcome_msg">Welcome to QuizBee!</string>
+    <string name="welcome_desc">The Card Quiz Game</string>
+    <string name="sign_up_message">To create new account, sign up here</string>
+    <string name="created_by">Created by Pallavi Tilloo</string>
     <string name="home_text">Register or Login</string>
+
+    <!--    Registration Form fields-->
     <string name="button_register">Register</string>
-    <string name="button_login">Login</string>
     <string name="register_text">User Registration Form</string>
-    <string name="login_text">Login</string>
     <string name="first_name">First Name</string>
     <string name="family_name">Family Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="dob">Date of birth (MM/DD/YYYY)</string>
-    <string name="welcome_msg">Welcome to QuizBee!</string>
-    <string name="welcome_desc">The Card Quiz Game</string>
-    <string name="sign_up_message">To create new account, sign up here</string>
-    <string name="created_by">Created by Pallavi Tilloo</string>
     <string name="title_activity_register">Register</string>
     <string name="register_success">Congratulations! You have successfully registered!</string>
+
+    <!--    Login fields-->
+    <string name="button_login">Login</string>
+    <string name="login_text">Login</string>
     <string name="login_success">Congratulations! You have successfully logged in!</string>
     <string name="login_fail">Sorry! Invalid credentials!</string>
-    <string name="game_rule_1">1. The game contains 10 questions based on general concepts related to computer science.</string>
-    <string name="game_rule_2">2. Every question has 5 points each.</string>
+
+    <!--    Game rules-->
+    <string name="game_rule_1">1. The game contains 5 questions based on concepts related to Android app development.</string>
+    <string name="game_rule_2">2. Every question has 10 points each.</string>
     <string name="game_rule_3">3. You can answer each question only once.</string>
-    <string name="game_rule_4">4. Some questions may have multiple correct answers. Such questions will have checkboxes for answers.</string>
+    <string name="game_rule_4">4. Answers may be fill-in or multiple choice. Some questions may have multiple choices as answers.</string>
     <string name="game_rule_5">5. Score will be displayed at the end of the game.</string>
     <string name="game_rule_message">Here you go! Good Luck!</string>
-    <string name="game_rule_title">Game Rules</string>
+    <string name="game_rule_title">Card Game Rules</string>
     <string name="start_button">START</string>
+
+    <!--    Questions, options and answers -->
+    <string name="question_1">What is an activity in Android?</string>
+    <string name="option_1_a">Activity performs the actions on the screen</string>
+    <string name="option_1_b">Manages the Application content</string>
+    <string name="option_1_c">Screen UI</string>
+    <string name="option_1_d">None of the above</string>
+    <string name="answer_1">Activity performs the actions on the screen</string>
+
+    <string name="question_2">What are the layouts available in android?</string>
+    <string name="option_2_a">Linear Layout</string>
+    <string name="option_2_b">Frame Layout</string>
+    <string name="option_2_c">Table Layout</string>
+    <string name="option_2_d">Path Layout</string>
+    <string name="answer_2">Linear Layout,Frame Layout,Table Layout</string>
+
+    <string name="question_3">What is fragment life cycle in android?</string>
+    <string name="option_3_a">onReceive() -> onAttach() -> onCreateView() -> onCreate()</string>
+    <string name="option_3_b">onCreate() -> onCreateView() -> onAttach() </string>
+    <string name="option_3_c">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
+    <string name="option_3_d">onStart() -> onCreateView() -> onCreate() -> onActivityCreated()</string>
+    <string name="answer_3">onAttach()-> onCreate() −> onCreateView() −> onActivityCreated() −> onStart() −> onResume()</string>
+
+    <string name="question_4">In which directory are the XML Layout files stored in an Android application?</string>
+    <string name="option_4_a">assets</string>
+    <string name="option_4_b">src</string>
+    <string name="option_4_c">res/layout</string>
+    <string name="option_4_d">res/values</string>
+    <string name="answer_4">res/layout</string>
+
+    <string name="question_5">Which programming language(s) are used for Android application development</string>
+    <string name="option_5_a">Java</string>
+    <string name="option_5_b">NodeJS</string>
+    <string name="option_5_c">C++</string>
+    <string name="option_5_d">Kotlin</string>
+    <string name="answer_5">Java,C++,Kotlin</string>
+
+    <!--    For dialog box and score stats -->
+    <string name="dialog_title">Confirm submission</string>
+    <string name="confirmation_text">Do you want to submit this answer?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="stats">View Previous Scores</string>
+    <string name="back">Go To Home</string>
+    <string name="view_stats">Score History</string>
 </resources>
